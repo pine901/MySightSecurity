@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pin_input"
+        android:icon="@drawable/lock"/>
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/history"/>
+
+    <item
+        android:id="@+id/add_device"
+        android:icon="@drawable/add_device"/>
+    <item
+        android:id="@+id/pin_setup"
+        android:icon="@drawable/setup"/>
+    <item
+        android:id="@+id/scan"
+        android:icon="@drawable/view"/>
+
+</menu>

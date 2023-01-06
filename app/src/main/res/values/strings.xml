@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MySightSecurity</string>
+    <string name="pin_input">Pin Input</string>
+    <string name="page_title">Page Title</string>
+    <string name="history">History</string>
+    <string name="title_adddevice">Add Device</string>
+    <string name="title_pinsetup">Pin Setup</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="search">Search</string>
+    <string name="add_now">Add Now</string>
+    <string name="add_device">Add New Device</string>
+    <string name="scan">Scan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_success">SuccessActivity</string>
+    <string name="title_activity_failure">FailureActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/scan">
+
+    <fragment
+        android:id="@+id/pin_input"
+        android:name="com.justin.mysightsecurity.ui.pin_input.PinInputFragment"
+        android:label="@string/pin_input"
+        tools:layout="@layout/fragment_pininput" />
+
+    <fragment
+        android:id="@+id/history"
+        android:name="com.justin.mysightsecurity.ui.history.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_history_to_playFragment"
+            app:destination="@id/playFragment"
+            app:enterAnim="@animator/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@animator/nav_default_enter_anim"
+            app:popExitAnim="@animator/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_device"
+        android:name="com.justin.mysightsecurity.ui.add_device.AddDeviceFragment"
+        android:label="@string/title_adddevice"
+        tools:layout="@layout/fragment_adddevice" >
+        <action
+            android:id="@+id/action_add_device_to_galleryFragment"
+            app:destination="@id/galleryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" >
+            <argument
+                android:name="qrCode"
+                app:argType="string"
+                app:nullable="true"
+                android:defaultValue="null" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/pin_setup"
+        android:name="com.justin.mysightsecurity.ui.pinsetup.PinSetupFragment"
+        android:label="@string/title_pinsetup"
+        tools:layout="@layout/fragment_pinsetup" />
+
+    <fragment
+        android:id="@+id/scan"
+        android:name="com.justin.mysightsecurity.ui.scan.ScanFragment"
+        android:label="@string/title_scan"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_scan_to_playFragment"
+            app:destination="@id/playFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.justin.mysightsecurity.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <argument
+            android:name="qrCode"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.justin.mysightsecurity.PlayFragment"
+        android:label="fragment_play"
+        tools:layout="@layout/fragment_play" />
+</navigation>
